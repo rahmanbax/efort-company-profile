@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,7 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`scroll-smooth`}>
-      <body className="antialiased">
+      <body className="antialiased text-zinc-900 bg-white">
+        <Navbar />
         {children}
       </body>
     </html>
