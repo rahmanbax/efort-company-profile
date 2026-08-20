@@ -72,7 +72,7 @@ export default function LandingPage() {
           />
         </div>
       </section>
-      <section id='services' className='bg-gray-50 py-20 mt-20'>
+      <section id='services' className='bg-linear-to-b from-atlantis/0 to-atlantis/5 py-20 mt-20'>
         <div className='max-w-7xl mx-auto flex flex-col items-center '>
           <h2 className='uppercase font-semibold text-gray-500'>Expertise</h2>
           <h1 className='font-semibold text-5xl mt-2'>Our Core Services</h1>
@@ -145,7 +145,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      <section id='experience' className='bg-gray-50 py-20 mt-20'>
+      <section id='experience' className='bg-linear-to-b from-atlantis/5 to-atlantis/0 py-20 mt-20'>
         <div className='max-w-7xl mx-auto flex flex-col items-center '>
           <h2 className='uppercase font-semibold text-gray-500'>Experience</h2>
           <h1 className='font-semibold text-5xl mt-2'>Featured Projects</h1>
@@ -233,7 +233,7 @@ export default function LandingPage() {
         </div>
       </section>
       <section id='contact' className='mx-auto mt-20 max-w-7xl'>
-        <div className="p-8 space-y-8 rounded-3xl bg-white border border-gray-200">
+        <div className="p-8 space-y-8 rounded-3xl bg-white border border-gray-200 overflow-hidden relative">
           <div>
             <h1 className='text-5xl'>Connect With Us</h1>
             <p className='mt-2 text-gray-500'>Have a project, business challenge, or collaboration in mind?</p>
@@ -257,7 +257,15 @@ export default function LandingPage() {
               <p>+62 81322878461</p>
             </div>
           </div>
+          <Image
+            src={"efort.svg"}
+            width={500}
+            height={500}
+            alt='efort'
+            className='absolute -top-15 -right-15 -rotate-10 opacity-10'
+          />
         </div>
+
       </section>
     </main>
   )
